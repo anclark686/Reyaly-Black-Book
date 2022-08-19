@@ -14,7 +14,7 @@ root.render(
       <Auth0Provider
         domain={domain}
         clientId={clientId}
-        redirectUri={`http://localhost:3000/`}
+        redirectUri={`https://reyaly-black-book.netlify.app/`}
       >
         <App />
       </Auth0Provider>

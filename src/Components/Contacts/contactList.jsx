@@ -23,7 +23,7 @@ export const ManageContacts = () => {
 
     const sendDetails = async () => {
         console.log(`name: ${name}, number: ${number}, email: ${email}, user: ${user.name}`)
-        await Axios.post("http://localhost:3001/add_user", {
+        await Axios.post("https://reyaly-bb-backend.herokuapp.com/add_user", {
             name: name,
             number: number,
             email: email,
@@ -37,7 +37,7 @@ export const ManageContacts = () => {
 
 
     const getDetails = async () => {
-        await Axios.post("http://localhost:3001/users",{
+        await Axios.post("https://reyaly-bb-backend.herokuapp.com/users",{
             username: user.name
         }).then(
             response => setUsers(response.data)
@@ -45,7 +45,7 @@ export const ManageContacts = () => {
     }
 
     const deleteOne = async (id) => {
-        await Axios.post("http://localhost:3001/delete_user", {
+        await Axios.post("https://reyaly-bb-backend.herokuapp.com/delete_user", {
             id: id
         }).then((response) => {
             console.log(response.data)
