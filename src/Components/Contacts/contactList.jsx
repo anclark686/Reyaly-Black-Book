@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Axios from "axios"
 import { useAuth0 } from "@auth0/auth0-react";
 import { Button, Modal, Form } from "react-bootstrap"
-import './contacts.css'
+
 
 export const ManageContacts = () => {
     const [name, setName] = useState("")

@@ -5,7 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./loading";
 import { Footer } from "./footer";
 import LoginButton from "./Login/login"
-import './Contacts/contacts.css'
+
 
 
 const Home = () => {
