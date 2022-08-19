@@ -5,6 +5,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Loading from "./loading";
 import { Footer } from "./footer";
 import LoginButton from "./Login/login"
+import './Contacts/contacts.css'
 
 
 const Home = () => {
@@ -20,8 +21,8 @@ const Home = () => {
                     <h1 className="welcome">Welcome to Reyaly Black Book</h1>
                     <div className="manage_contacts">
                         <h1>Manage Your Contacts</h1>
-                        <h5>
-                            Reyaly Black Book is like the little blsck
+                        <h5 className="contact_list">
+                            Reyaly Black Book is like the little black
                             book from the old days, now online. Manage
                             and easily access your contacts using your 
                             new online "little black book". Login to get started
