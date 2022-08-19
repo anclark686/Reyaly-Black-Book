@@ -18,18 +18,15 @@ export const ManageContacts = () => {
 
     useEffect(() => {
         getDetails()
-        console.log(user)
     }, [count]) 
 
     const sendDetails = async () => {
-        console.log(`name: ${name}, number: ${number}, email: ${email}, user: ${user.name}`)
         await Axios.post("https://reyaly-bb-backend.herokuapp.com/add_user", {
             name: name,
             number: number,
             email: email,
             username: user.name
         }).then((response) => {
-            console.log(response.data)
             setCount(count + 1)
         })
         handleClose()
@@ -48,7 +45,6 @@ export const ManageContacts = () => {
         await Axios.post("https://reyaly-bb-backend.herokuapp.com/delete_user", {
             id: id
         }).then((response) => {
-            console.log(response.data)
             setCount(count + 1)
         })
         
