@@ -10,6 +10,10 @@
   height: 100%;
 }
 
+.login_logout {
+  margin-right: 20px;
+}
+
 .navbar {
   background-color: #0D1517;
   color: lightgray;
@@ -40,7 +44,7 @@
   width: 100%;
 }
 
-.footer_logged_in {
+.footer {
 
   background-color: #0D1517;
   color: #D3D4D5;
@@ -53,14 +57,55 @@
   width: 100%;
 }
 
-.footer_logged_out {
-  background-color: #0D1517;
-  color: #D3D4D5;
-  text-align: center;
-  padding: 20px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 120px;
-  width: 100%;
+.manage_contacts {
+  width: 75%;
+  height: 600px;
+  margin: 0px auto;
+  background-image: url(blackBook.png);
+  background-size: cover;
+
+
+  /* height: 100vh;  */
+  position: relative;
+  background-attachment: relative;
+
+}
+
+.header {
+  margin: 20px;
+  color: lightgrey
+}
+
+.add_button {
+  margin-top: 20px;
+}
+
+.add_user {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 10px auto;
+}
+
+.contact_list {
+  color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  height: 75%;
+  width: 80%;
+  margin: 10px auto;
+  overflow-y: auto;
+}
+
+.user {
+  width: 200px;
+  margin: 0px auto;
+}
+
+.intro {
+  color: lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 20px auto;
 }

@@ -3,13 +3,13 @@ import React from "react";
 const github = require("./github.png")
 const linkedin = require("./linkedin.png")
 
-export const Footer = (props) => {
+export const Footer = () => {
   const today = new Date();
     return (
 
     <div>
         <div className="phantom" />
-        <div className={props.fclass}>
+        <div className="footer">
             <div className="footerLinks">
                 <a href="https://github.com/anclark686" target="_blank" rel="noreferrer">
                     <img

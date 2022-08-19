@@ -20,8 +20,8 @@ const Home = () => {
                 <div className="logged_out">
                     <h1 className="welcome">Welcome to Reyaly Black Book</h1>
                     <div className="manage_contacts">
-                        <h1>Manage Your Contacts</h1>
-                        <h5 className="contact_list">
+                        <h1 className="header">Manage Your Contacts</h1>
+                        <h5 className="intro">
                             Reyaly Black Book is like the little black
                             book from the old days, now online. Manage
                             and easily access your contacts using your 
@@ -29,14 +29,14 @@ const Home = () => {
                         </h5>
                         <LoginButton />
                     </div>
-                    <Footer fclass="footer_logged_out"/> 
+                    <Footer /> 
                 </div>
             }
             {isAuthenticated && (
             <div className="logged_in">
                 <h1 className="welcome">Welcome {user.name}!</h1>
                 <ManageContacts /> 
-                <Footer fclass="footer_logged_in"/> 
+                <Footer /> 
             </div>)}   
         </div>
     )
