@@ -9,11 +9,11 @@ export function Navbar() {
     return (
         <nav className="navbar">
             <div className="brand">
-            <h1>R</h1>
+            <h2>R</h2>
             <p>eyaly</p>
-            <h1>B</h1>
+            <h2>B</h2>
             <p>lack</p>
-            <h1>B</h1>
+            <h2>B</h2>
             <p>ook</p>
             </div>
             

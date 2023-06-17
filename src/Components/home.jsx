@@ -20,7 +20,7 @@ const Home = () => {
                 <div className="logged_out">
                     <h1 className="welcome">Welcome to Reyaly Black Book</h1>
                     <div className="manage_contacts">
-                        <h1 className="header">Manage Your Contacts</h1>
+                        <h2 className="header">Manage Your Contacts</h2>
                         <h5 className="intro">
                             Reyaly Black Book is like the little black
                             book from the old days, now online. Manage
